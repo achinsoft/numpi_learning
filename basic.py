@@ -43,3 +43,17 @@ print(a)
 a = a.reshape(1, 6)  # this needs to be saved on another object or assign to itself to reflect
 print(a.shape)
 print(a)
+
+# create an array of sequential numbers
+a = np.arange(24)
+print(a)
+print(a.ndim)  # returns the dimension
+a = a.reshape(2, 12)  # reshape to check the new dimension
+print(a.ndim)
+
+# use itemsize to get the size of the element in array
+a = np.array([1, 2, 3, 4, 5], dtype=np.int32)  # try using int8, int 16 or float32 and see the value
+print(a.itemsize)
+
+# flags are the options that can be set and have different controls on the array
+print(a.flags)  # ====HOW TO SET THESE PARAMETERS NEED TO EXPLORE===
