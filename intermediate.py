@@ -20,3 +20,12 @@ print(a)
 # To fill with 1s use ones instead of zeros :)
 a = np.ones(5)
 print(a)
+
+
+# convert list, tuple  to ndarray
+x = [1, 2, 3]
+a = np.asarray(x)
+print(a)
+x = (1, 2, 3)
+a = np.asarray(x)
+print(a)
