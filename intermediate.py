@@ -21,11 +21,32 @@ print(a)
 a = np.ones(5)
 print(a)
 
-
 # convert list, tuple  to ndarray
 x = [1, 2, 3]
 a = np.asarray(x)
 print(a)
 x = (1, 2, 3)
 a = np.asarray(x)
+print(a)
+'''
+========= THIS CODE SEGMENT DOESN'T WORK====
+========= NEED DEEP UNDERSTANDING ==========
+# convert string or any object with buffer capabilities to array
+s = 'Hello World'
+a = np.frombuffer(s, dtype='int32')
+print(a)
+
+'''
+
+# create list object using range function
+list1 = range(5)
+print(list1)
+it = iter(list1)
+
+# use iterator to create ndarray
+a = np.fromiter(it, dtype=float)
+print(a)
+
+# start and stop parameters set
+a = np.arange(10, 20, 2)
 print(a)
